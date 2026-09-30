@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Online Voting System - SDLC</title>
+</head>
+
+<body bgcolor="lightblue">
+
+<center>
+
+    <h1>ONLINE VOTING SYSTEM</h1>
+
+    <p><b>Software Development Life Cycle Based Project</b></p>
+
+</center>
+
+<hr>
+
+<h2>1. Requirement Analysis</h2>
+
+<p>
+The system allows eligible voters to enter their details,
+select their constituency and choose a candidate.
+The main requirement is to provide a simple and user-friendly
+online voting interface.
+</p>
+
+<ul>
+    <li>Voter registration</li>
+    <li>Voter identification</li>
+    <li>Age verification information</li>
+    <li>Candidate selection</li>
+    <li>Vote submission</li>
+</ul>
+
+<hr>
+
+<h2>2. System Design</h2>
+
+<p>
+The system is designed with separate sections for voter details,
+constituency selection and candidate selection.
+</p>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>Module</th>
+        <th>Purpose</th>
+    </tr>
+
+    <tr>
+        <td>Voter Details</td>
+        <td>Collect voter information</td>
+    </tr>
+
+    <tr>
+        <td>Constituency</td>
+        <td>Select voting constituency</td>
+    </tr>
+
+    <tr>
+        <td>Candidate Selection</td>
+        <td>Select preferred candidate</td>
+    </tr>
+
+    <tr>
+        <td>Vote Submission</td>
+        <td>Submit the voting form</td>
+    </tr>
+
+</table>
+
+<hr>
+
+<h2>3. Implementation</h2>
+
+<p>
+The user interface is implemented using HTML.
+The form elements are used to collect voter information
+and candidate selection.
+</p>
+
+<hr>
+
+<h2>4. Testing</h2>
+
+<p>
+The following test cases can be performed:
+</p>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>Test Case</th>
+        <th>Expected Result</th>
+    </tr>
+
+    <tr>
+        <td>Enter voter details</td>
+        <td>Details should be accepted</td>
+    </tr>
+
+    <tr>
+        <td>Select constituency</td>
+        <td>Selected constituency should appear</td>
+    </tr>
+
+    <tr>
+        <td>Select candidate</td>
+        <td>Only one candidate can be selected</td>
+    </tr>
+
+    <tr>
+        <td>Click Cast Vote</td>
+        <td>Form should be submitted</td>
+    </tr>
+
+</table>
+
+<hr>
+
+<h2>5. Deployment</h2>
+
+<p>
+After testing, the Online Voting System can be deployed
+on a web server so that users can access the system through
+a web browser.
+</p>
+
+<hr>
+
+<h2>6. Maintenance</h2>
+
+<p>
+The system can be updated in the future by adding voter
+authentication, database connectivity, security features,
+admin management and voting reports.
+</p>
+
+<hr>
+
+<center>
+
+    <h2>ONLINE VOTING FORM</h2>
+
+</center>
+
+<form>
+
+    <h3>Voter Details</h3>
+
+    <label>Voter Name:</label>
+
+    <input type="text"
+           name="votername"
+           placeholder="Enter your name">
+
+    <br><br>
+
+
+    <label>Voter ID:</label>
+
+    <input type="text"
+           name="voterid"
+           placeholder="Enter Voter ID">
+
+    <br><br>
+
+
+    <label>Age:</label>
+
+    <input type="number"
+           name="age"
+           placeholder="Enter age">
+
+    <br><br>
+
+
+    <label>Constituency:</label>
+
+    <select name="constituency">
+
+        <option>Select Constituency</option>
+
+        <option>Chennai Central</option>
+
+        <option>Chennai North</option>
+
+        <option>Chennai South</option>
+
+        <option>Thiruvallur</option>
+
+    </select>
+
+
+    <h3>Candidate Selection</h3>
+
+    <input type="radio"
+           name="candidate"
+           value="Candidate A">
+
+    Candidate A
+
+    <br><br>
+
+
+    <input type="radio"
+           name="candidate"
+           value="Candidate B">
+
+    Candidate B
+
+    <br><br>
+
+
+    <input type="radio"
+           name="candidate"
+           value="Candidate C">
+
+    Candidate C
+
+    <br><br>
+
+
+    <input type="radio"
+           name="candidate"
+           value="NOTA">
+
+    NOTA
+
+    <br><br>
+
+
+    <h3>Declaration</h3>
+
+    <input type="checkbox"
+           name="declaration">
+
+    I confirm that the information provided is correct.
+
+    <br><br>
+
+
+    <input type="submit"
+           value="CAST VOTE">
+
+    <input type="reset"
+           value="CLEAR">
+
+</form>
+
+<hr>
+
+<center>
+
+    <h3>Thank You for Voting!</h3>
+
+    <p>Your vote is valuable.</p>
+
+</center>
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            width: 350px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form>
+
+    <label>Student Name</label>
+    <input type="text" placeholder="Enter name" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="Enter phone number" required>
+
+    <label>Date of Birth</label>
+    <input type="date">
+
+    <label>Gender</label><br>
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+
+    <br><br>
+
+    <label>Department</label>
+    <select>
+        <option>Information Technology</option>
+        <option>Computer Science</option>
+        <option>Electronics</option>
+        <option>Mechanical</option>
+    </select>
+
+    <label>Year</label>
+    <select>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+
+    <label>Password</label>
+    <input type="password" placeholder="Create password" required>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>

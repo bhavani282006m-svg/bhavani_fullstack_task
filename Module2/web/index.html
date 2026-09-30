@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- basic form -->
+    <form id="basicForm" class="form1">
+        <label for="name">Name:</label>
+        <input type="text" id="name" class="inputField" name="name" required>
+        <button onclick="handleNameClick(event)"> Autofill your name "Abhishek" </button>
+        <label for="email">Email:</label>
+        <input type="email" id="email" class="inputField" name="email" required>
+        <button onclick="handleEmailClick(event)">  Autofill your email </button>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" class="inputField" rows="4" required></textarea>
+        <button onclick="handleMessageClick(event)">Autofill message data</button>
+        <input type="submit" value="Submit" onclick="handleSubmit(event)">
+    </form>
+    <p>To turn on dark mode : click on the button below</p>
+    <button id="mode" onclick="toggleMode()">  Turn on Dark mode </button>
+    <br><br>
+    <button id="ExceptionHandling"  onclick="goToPage('exceptionHandling.html')"> Click here to move to exception Handling page </button>
+    <script src="script.js"></script>
+</body>
+</html>
